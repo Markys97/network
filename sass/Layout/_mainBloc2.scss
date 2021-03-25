@@ -1,0 +1,124 @@
+.make-post{
+    width: 100%;
+    background-color: white;
+    height: auto;
+    border-radius:10px;
+    
+    &-control{
+        width: 100%;
+        height: 40px;
+        margin-top:10px;
+        &__input{
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            margin-top:3px;
+        }
+    }
+    &__submit{
+        width: 80px;
+        height: 35px;
+        margin-top:10px;
+        background-color:$color-main;
+        color:white;
+        padding:0px 10px;
+        &:hover{
+            background-color: $color-nd;
+            color:black
+        }
+        i{
+            padding-right:10px;
+        }
+    }
+}
+
+.post-published{
+    width: 100%;
+    height: auto;
+    border-radius:10px;
+    margin-top:30px;
+    background-color: white;
+    &-info{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        
+        &-user{
+            width: 150px;
+            
+          
+            &__img{
+                width: 50px;
+                height: 50px;
+                border-radius:50px;
+                display: inline-block;
+               
+               
+            }
+            &__name{
+               display: inline-block;
+            vertical-align: top;
+            margin-top:5px;
+            }
+            
+        }
+        &__time{
+            margin-right:20px;
+        }
+    }
+    &__text{
+        margin-top:10px;
+        margin-left:10px;
+    }
+    &-file{
+        width: 100%;
+        height:auto;
+        margin-top:20px;
+        &__img{
+            width: 48%;
+            height: auto;
+            padding-left:15px;
+            &--single{
+                width: 95%;
+                margin-left:10px;
+            }
+        }
+    }
+    &-option{
+        width: 300px;
+        height: auto;
+        margin-left:10px;
+        margin-top:10px;
+        
+        &__btn{
+            width: 100px;
+            height: 35px;
+            color:white;
+            background-color: $color-main;
+            display: inline-block;
+            margin-left:5px;
+            cursor:pointer;
+            &:hover{
+                background-color: $color-nd;
+                color:black;
+            }
+            
+        }
+    }
+    &__separator{
+        width: 90%;
+        opacity: 0.3;
+        margin:auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+

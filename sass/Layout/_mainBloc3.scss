@@ -1,0 +1,119 @@
+.card3{
+    width: 100%;
+    height: auto;
+   background-color: white;
+   border-radius:10px;
+    
+    &__title{
+        text-align: center;
+    }
+    &__img{
+        width: 90%;
+        height: auto;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    &__subtitle{
+        text-align: center;
+    }
+    &__time{
+        text-align: center;
+        margin-top: 10px;
+    }
+    &__btn{
+        width: 90%;
+        position: relative;
+        left: 50%;
+        transform:translateX(-50%);
+        height: 30px;
+        margin-top: 10px;
+   }
+}
+
+
+.card4{
+    width: 100%;
+    height: auto;
+    border-radius:10px;
+    margin-top:25px;
+    text-align:center;
+    background-color: #fff;
+    &__title{
+        font-size: 18px;
+    }
+    &__img{       
+        width: 80px;
+        height: 80px;
+        margin-top:10px;
+    }
+    &__block-btn{
+        width: 100%;
+        display: flex;
+        margin-left:20px;
+        margin-top: 20px;
+        flex-direction: row;
+        @include mobile{
+            flex-direction: column;
+            margin-left:0px;
+        }
+        &__btn{
+            width: 40%;
+            height: 30px;
+            @include mobile{
+                width: 100%;
+                margin-top: 10px;
+            }
+           opacity: 0.4;
+            margin:2px;
+            color:white;
+            cursor: pointer;
+            &--green{
+                background-color: #1cb43d;
+            }
+            &--red{
+                background-color: red;
+            }
+        }
+    }
+}
+
+
+.card5{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+    margin-top:20px;
+    border-radius:10px;
+    &__text{
+      
+       padding-top: 30px;
+    }
+}
+
+.card6{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    border-radius:10px;
+    &__main{
+        padding-top: 40px;
+      
+           font-size: 30px;
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,162 @@
+.nav-container{
+    width: 30%;
+    height: 60px;
+    
+
+    .nav{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+       max-width: 80%;
+    
+       
+
+        &__link{
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            width: 60px;
+            height: 50px;
+            font-size: 18px;
+            padding-top:16px;
+            text-align: center;
+
+            &--notification{
+                position: relative;
+                
+             
+
+
+                
+            }
+            &:hover{
+                color:black;
+                background-color: $color-nd
+            }
+            &--home{
+                width: 100px;
+                background:rgb(41,54,61);
+                &::after{
+                    content: "LOGO";
+                }
+                
+            }
+            &--none{
+                @include mobile{
+                    display: none;
+                }
+            }
+            
+        }
+    }
+
+    .container-subnav:hover .subnav{
+        display: block;
+      
+    }
+    
+    .subnav{
+       width: 300px;
+        height:auto;
+        background-color:white;
+        display: none;
+        list-style: none;
+        box-shadow:0px 0px 10px black;
+        padding-top:10px;
+        position: relative;
+        left: 0px;
+        &-block-link{
+           margin-top:10px;
+           height: 40px;
+           padding-left:5px;
+           &:hover{
+               background-color: $color-nd;
+           }
+           &__link{
+               text-decoration:none;
+               color:black;
+               font-size:18px;
+           }
+        }
+    }
+}
+
+
+
+.nav-control{
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-profil{
+        width:50%;
+        height:50px;
+        padding-top:5px;
+        text-align: center;
+        margin-left: 50px;
+        @include mobile{
+            display: none;
+        }
+     &:hover{
+         background: white;
+     }
+        &__img{
+            width:40px;
+            height:40px;
+            border-radius:50px;
+           
+            
+        }
+    }
+    &-burger{
+        width: 50px;
+        height:auto ;
+       display: none;
+       cursor: pointer;
+       @include mobile{
+           display: block;
+           margin-left: 50px;
+       }
+     
+        &__line{
+            width: 30px;
+            height: 2px;
+            display: block;
+            margin-top: 5px;;
+            background-color: white;
+        }
+    }
+
+}
+
+.nav-small{
+    list-style: none;
+
+    &__link{
+        color:white;
+        text-decoration: none;
+        display: inline-block;
+        width:100%;
+        padding-left: 10px;
+        margin-top:10px;
+        height: 40px;
+        padding-top: 7px;
+        &:hover{
+            background-color: $color-nd;
+            color:black;
+        }
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
